@@ -1,0 +1,139 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web con elementos básicos</title>
+</head>
+<body>
+
+    <header>
+        <h1> <strong>Análisis corto del libro "La insoportable levedad del ser"</strong></h1>
+        <h3> Análisis del libro escrito por 'Milan Kundera', escritor y ensayista checo-francés y autor de libros como:</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><h5>"La lentitud" (1995)</h5></li>
+            <li><h5>"El libro de los amores ridículos" (1968)</h5></li>
+            <li><h5>"La vida está en otra parte" (1973)</h5></li>
+            <li><h5>"La fiesta de la insignificancia" (2014)</h5></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h3>Historia breve del autor</h3>
+            <p>
+                Milan Kundera (1929-2023) fue un destacado escritor, novelista y ensayista checo-francés. Estudió literatura y cine en la Academia de Música y Artes Dramáticas de Praga, pero su carrera literaria se desarrolló principalmente en el exilio en Francia.
+            </p>
+            <p>
+                Es conocido por su estilo único que mezcla narrativa, filosofía y ensayo. Su obra más famosa, "La insoportable levedad del ser" (1984), es un profundo análisis de la condición humana.
+            </p>
+        </article>
+
+        <section>
+            <h3>Mejores libros de Milan Kundera y por qué deberías de darle una oportunidad</h3>
+            <ol>
+                <li>
+                    <h5>"La despedida" (1976)</h5>
+                    <p>Ambientada en un balneario, esta novela se centra en las complejidades de las relaciones humanas y el destino.</p>
+                </li>
+                <li>
+                    <h5>"La broma" (1967)</h5>
+                    <p>Primera novela de Kundera, una crítica mordaz al régimen estalinista.</p>
+                </li>
+                <li>
+                    <h5>"El libro de la risa y el olvido" (1979)</h5>
+                    <p>Explora la memoria, la historia y la identidad en un contexto de opresión política.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Análisis</h3>
+            <p>
+                "La insoportable levedad del ser," escrito por Milan Kundera, es una exploración profunda de temas como el amor, la identidad y la libertad.
+            </p>
+        </section>
+
+        <section>
+            <h3>Imágenes de los libros</h3>
+            <img src="./assets/la-despedida.png" alt="imagen del libro de la despedida">
+            <img src="./assets/cap-libro-la-broma.png" alt="imagen del libro de la broma">
+            <img src="./assets/la-risa-y-el-olvido.png" alt="imagen del libro de la risa y el olvido">
+        </section>
+
+        <aside>
+            <table border="1">
+                <tr>
+                    <th>Personaje</th>
+                    <th>Frases más bonitas en el libro</th>
+                </tr>
+                <tr>
+                    <td>Tomas</td>
+                    <td>"El amor no se manifiesta en el deseo de acostarse con alguien, sino en el deseo de dormir junto a alguien."</td>
+                </tr>
+                <tr>
+                    <td>Sabina</td>
+                    <td>"La belleza es un mundo traicionado."</td>
+                </tr>
+                <tr>
+                    <td>Teresa</td>
+                    <td>"El amor es el deseo de convertir el sufrimiento en algo que se comparte."</td>
+                </tr>
+            </table>
+        </aside>
+
+        <section>
+            <h3>Video sobre "La insoportable levedad del ser"</h3>
+            <video src="./assets/Lo Bueno de Leer   La Insoportable Levedad del Ser de Milan Kundera.mp4"  controls muted autoplay loop width="100%" ></video>
+        </section>
+
+        <section>
+            <h3>Tienda física en tu ciudad</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8658.33967493347!2d-110.32196709564084!3d24.158283249937746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ed450e04efd585%3A0x77dac634f373f1a9!2sLibrer%C3%ADa%20Educal%20La%20Paz%2C%20Centro%20Cultural%20La%20Paz!5e0!3m2!1ses-419!2smx!4v1725248621814!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section>
+            <h3>Formulario de contacto</h3>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="motivo">Motivo de contacto:</label><br>
+                <select id="motivo" name="motivo" required>
+                    <optgroup label="Consulta">
+                        <option value="informacion">Solicitar información</option>
+                        <option value="disponibilidad">Consultar disponibilidad de libros</option>
+                    </optgroup>
+                    <optgroup label="Sugerencia">
+                        <option value="mejoras">Sugerir mejoras</option>
+                        <option value="otro">Otro</option>
+                    </optgroup>
+                </select><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="libros">Libros favoritos de Kundera (con autocompletado):</label><br>
+                <input list="libros-favoritos" id="libros" name="libros">
+                <datalist id="libros-favoritos">
+                    <option value="La insoportable levedad del ser">
+                    <option value="La broma">
+                    <option value="El libro de la risa y el olvido">
+                    <option value="La inmortalidad">
+                </datalist><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Análisis literario de Milan Kundera</p>
+    </footer>
+    
+</body>
+</html>
