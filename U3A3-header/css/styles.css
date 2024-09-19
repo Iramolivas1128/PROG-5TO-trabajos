@@ -1,0 +1,66 @@
+*{
+    font-family: "Roboto", system-ui;
+}
+
+body{ /*Parametros para el body */
+    margin: 0;
+    color:#f7f0f5
+}
+
+header{ /*asignamos el color de fondo del header */
+    width: 100%;
+    height: 25%;
+    background-color: #5a2375;
+    position: sticky;
+    top: 0;
+}
+
+.easy-tech-logo{
+    margin: 7% 0 0 20%;
+    width: 50%;
+    height: 60%;
+}
+
+
+.nav-links { /* Estilo de la lista de navegación*/
+    list-style-type: none;
+    margin-top: 9%;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; 
+    font-size:larger;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Estilo para la barra de búsqueda */
+input[type="search"] {
+    width:25rem;
+    height: 2.5rem;
+    padding: 0 0.9375rem;
+    border: 0.200rem solid #f7f0f5;
+    border-radius: 1.25rem; /* Hace que los lados sean redondeados */
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="search"]:focus {
+    border-color: #3d3d3d;
+}
+
+.img-icon-profile-info{
+    margin-top: 12% ;
+    width: 30%;
+    height: 45%;
+}
