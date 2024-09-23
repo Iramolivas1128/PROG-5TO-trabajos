@@ -1,0 +1,63 @@
+body{ 
+    margin: 0;
+    background-color:#f7f0f5;
+    font-family: "Roboto", sans-serif;
+   
+}
+
+.contact-section{
+    margin-left: 30%;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+    width: 40%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 0.28rem;
+    border: 1px solid #ccc;
+}
+
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #3a8dff; 
+    outline: none;
+    box-shadow: 0 0 5px rgba(58, 141, 255, 0.5); 
+}
+
+.form-button:hover {
+    background-color: #336fcb; 
+}
+
+.form-button:active {
+    background-color: #2a5ca2; 
+}
+
+
+/* Pseudoelementos */
+.form-label::after {
+    content: "*";
+    color: red;
+    margin-left: 5px;
+}
+
+.form-input:invalid {
+    border-color: red;
+}
+
+/* Estilo de ayuda extra en campos */
+.form-group-email::before {
+    content: "Por favor, ingresa un correo válido.";
+    font-size: small;
+    color: #555;
+    display: block;
+    margin-bottom: .8%;
+}
+
