@@ -1,0 +1,173 @@
+
+
+body{
+    margin: 0;
+    background-color:#f7f0f5 ;
+}
+
+header{ 
+    width: 100%;
+    height: 25%;
+    background-color: #5a2375; /*asignamos el color de fondo del header */
+    position: sticky;
+    top: 0;
+    color:#f7f0f5;
+}
+.header-section{
+    width: 100%;
+}
+
+.easy-tech-logo{
+    margin: 7% 0 0 20%;
+    width: 50%;
+    height: 60%;
+}
+
+
+/* Estilos base para el menú */
+.nav-links {
+    list-style-type: none;
+    margin-top: 9%;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; 
+    font-size: larger;
+    position: relative; 
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a{
+    color:#f7f0f5;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #5a2375; 
+    padding: 0;
+    list-style-type: none;
+    width: 200px; 
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #f7f0f5; 
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #f7f0f5;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #473198; 
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Muestra el submenú al hacer hover */
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Estilo para la barra de búsqueda */
+input[type="search"] {
+    width:25rem;
+    height: 2.5rem;
+    padding: 0 0.9375rem;
+    border: 0.200rem solid #f7f0f5;
+    border-radius: 1.25rem; 
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="search"]:focus {
+    border-color: #3d3d3d;
+}
+
+/*Estilo del icono de perfil */
+.img-icon-profile-info{
+    margin-top: 12% ;
+    width: 30%;
+    height: 45%;
+}
+
+/*Medidas de las imagenes de los productos*/
+.img-producto{
+    width: 59%;
+    height: 40%;
+    padding-top: 4%;
+}
+
+.titulo-producto{
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.desc-corta-producto{
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    font-style: small;
+    padding: 0 3% 0 3%;
+}
+
+.button-ver-mas{
+    display: flex;
+    font-size: large;
+    padding: 2.5%;
+    background-color: #473198;
+    color: #f7f0f5;
+    border: 3px solid #3d3d3d;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Contenedor de las tarjetas de productos */
+.card-products-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    gap: 1.8rem; 
+    padding: 2rem;
+}
+
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border: 4px solid #3d3d3d;
+    border-radius: 4%;
+    width: 21.875rem;
+    height: 31.25rem;
+    margin: 0.5rem; /* Espacio entre las tarjetas */
+}
+
+
+/* Ajusta la imagen del producto */
+.img-producto {
+    width: 80%;
+    height: auto;
+    padding-top: 4%;
+}
