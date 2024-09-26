@@ -6,4 +6,4 @@ Repositorio de trabajos de la materia de programación en 5to semestre
 - [Ejercicio #3 - Formularios y metadatos](/PROG-U2A3/index-U2A3.html)
 - [Ejercicio #3 - Header sticky](/U3A3-header/index.html)
 - [Formulario con estilos, pseudoelementos y pseudoclases](/CSS-U3-ACT4/index.html)
--[Ejercicio #5 - Sitio con tarjetas (Flex)](/CSS-U3-ACT5/index.html)
+- [Ejercicio #5 - Sitio con tarjetas (Flex)](/CSS-U3-ACT5/index.html)
