@@ -1,0 +1,200 @@
+/* Definir variables globales */
+:root {
+    --primary-color: #5a2375;
+    --secondary-color: #473198;
+    --text-color-light: #f7f0f5;
+    --text-color-dark: #3d3d3d;
+}
+
+body {
+    margin: 0;
+    background-color: var(--text-color-light);
+}
+
+header { 
+    width: 100%;
+    height: 20vh; 
+    background-color: var(--primary-color);
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    color: var(--text-color-light);
+}
+
+.easy-tech-logo {
+    margin: 7% 0 0 20%;
+    width: 50%;
+    height: 60%;
+}
+
+/* Estilos base para el menú */
+.nav-links {
+    list-style-type: none;
+    margin-top: 9%;
+    padding: 0;
+    display: flex; 
+    justify-content: space-between; 
+    font-size: larger;
+    position: relative;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: var(--text-color-light);
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: var(--primary-color);
+    padding: 0;
+    list-style-type: none;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid var(--text-color-light);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--secondary-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Estilo para la barra de búsqueda */
+input[type="search"] {
+    width: 25rem;
+    height: 2.5rem;
+    padding: 0 0.9375rem;
+    border: 0.2rem solid var(--text-color-light);
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="search"]:focus {
+    border-color: var(--text-color-dark);
+}
+
+/* Estilo del icono de perfil */
+.img-icon-profile-info {
+    margin-top: 12%;
+    width: 30%;
+    height: 45%;
+}
+
+.index-main-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center;
+    background-color: var(--text-color-light);
+}
+
+/* Estilo del carrusel */
+.carousel {
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    justify-self: center; 
+}
+
+/* Contenedor de las tarjetas de productos */
+.card-products-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); 
+    gap: 1rem; /* Espacio entre las tarjetas */
+    justify-items: center; 
+    width: 100%;
+}
+
+/* Estilo de las tarjetas de productos */
+.tarjeta-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border: 4px solid var(--text-color-dark);
+    border-radius: 4%;
+    width: 21.875rem; /* Ancho de la tarjeta */
+    height: 27.25rem; /* Alto de la tarjeta */
+    margin: 0.5rem;
+    background-color: #fff;
+}
+
+/* Ajuste de las imágenes de los productos */
+.img-producto {
+    width: 50%;
+    height: auto;
+    padding-top: 4%;
+}
+
+/*modificacion del texto dentro de cada tarjeta */
+.titulo-producto {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    font-weight: 700;
+    margin-top: 4%;
+}
+
+.desc-corta-producto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: small;
+    padding: 0 3%;
+}
+
+.precio {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    text-align: left;
+}
+
+.button-ver-mas {
+    font-size: large;
+    padding: calc(1% + 1rem);
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    border: 3px solid var(--text-color-dark);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card-product3 .button-ver-mas,
+.card-product5 .button-ver-mas,
+.card-product6 .button-ver-mas {
+    margin: 5% 0;
+}
