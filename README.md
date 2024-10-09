@@ -9,3 +9,4 @@ Repositorio de trabajos de la materia de programación en 5to semestre
 - [Ejercicio #5 - Sitio con tarjetas (Flex)](/CSS-U3-ACT5/index.html)
 - [Ejercicio #6 - Variables y funciones](/CSS-U3-ACT6/index.html)
 - [Ejercicio #7 - CSS Grid](/CSS-U3-ACT7/index.html)
+- [Ejercicio #8 - Sitio responsivo](/CSS-U3-ACT8/index.html)
