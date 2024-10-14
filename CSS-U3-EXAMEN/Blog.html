@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" target="_self">
+                    <img class="img-logo" src="./assets/Easy-teach-logo-main.png" alt="EasyTech logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Dropdown Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                              <!-- Dropdown Componentes con submenú -->
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Computadoras</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Arma tu propia computadora</a></li>
+                                        <li><a class="dropdown-item" href="#">Computadoras pre-ensambladas</a></li>
+                                        <li><a class="dropdown-item" href="#">Computadoras de escritorio</a></li>
+                                        <li><a class="dropdown-item" href="#">Portatiles</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Dropdown Componentes con submenú -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Componentes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Tarjetas Gráficas</a></li>
+                                        <li><a class="dropdown-item" href="#">Tarjetas madre</a></li>
+                                        <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                                        <li><a class="dropdown-item" href="#">Memorias RAM</a></li>
+                                        <li><a class="dropdown-item" href="#">Unidades de almacenamiento</a></li>
+                                        <li><a class="dropdown-item" href="#">Fuentes de Poder</a></li>
+                                        <li><a class="dropdown-item" href="#">Refrigeración</a></li>
+                                        <li><a class="dropdown-item" href="#">Gabinetes</a></li>
+                                    </ul>
+                                </li>
+                                  <!-- Dropdown Componentes con submenú -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Perifericos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Pantallas</a></li>
+                                        <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                        <li><a class="dropdown-item" href="#">Teclados</a></li>
+                                        <li><a class="dropdown-item" href="#">Monitores</a></li>
+                                        <li><a class="dropdown-item" href="#">Sillas gamer</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link active custom-nav-link" href="#">Servicio de reparación</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                            <a class="nav-link custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                            </a>
+                              <!-- Dropdown Componentes con submenú -->
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="./Blog.html">Blog del día</a>
+                                    <a class="dropdown-item" href="#">Tendencias tecnologicas</a>
+                                    <a class="dropdown-item" href="#">Tutoriales y guías</a>
+                                    <a class="dropdown-item" href="#">Reseñas de productos</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active custom-nav-link" href="./page-Nosotros.html" target="_self">Nosotros</a>
+                        </li>
+                    </ul>
+    
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <img class="img-icon-profile-info" src="./assets/easy-tech-profile-icon.png" alt="Icono para ver la informacion del usuario">
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-blog container">
+        
+        <div class = "row mt-4">
+            <section class="col-xxl-12">
+                <h1 class="blog-titulo xxl-my-5 md-my-1 text-center">Guía para Armar tu Propia PC: ¿Qué Aspectos Tener en Consideración?</h1>
+                <p class="blog-parrafo1">Armar tu propia PC es una excelente manera de personalizar tu experiencia tecnológica y obtener exactamente lo que necesitas a un costo más accesible. No solo te permite elegir los mejores componentes para tus necesidades, sino que también te ayuda a entender mejor cómo funciona tu equipo, lo que puede ser útil para actualizaciones futuras o reparaciones. 
+                    En este blog, te mostraremos los aspectos más importantes que debes considerar antes de empezar a construir tu propia computadora.</p>
+    
+                 <p class="d-none d-md-block">A diferencia de las PC preconfiguradas que ofrecen los fabricantes, cuando armas tu propia computadora puedes elegir componentes específicos según tu presupuesto y necesidades, asegurándote de que cada pieza encaje perfectamente con tu uso diario. Además, puedes tomar decisiones basadas en la calidad y el rendimiento, 
+                    sin comprometerte con piezas que no necesitas o que podrías querer reemplazar más adelante.
+                </p>
+            </section>
+
+            
+            <section class="col-xxl-6 py-5">
+                <h2>Paso 1: Definir el Propósito de la PC</h2>
+                <p>Antes de comenzar a elegir componentes, es crucial definir claramente el <strong>uso principal</strong> que le darás a la PC. Dependiendo de tus necesidades, las piezas que elijas pueden variar drásticamente. Algunas configuraciones comunes incluyen:</p>
+                <ul>
+                    <li><strong>Gaming:</strong> Para los entusiastas de los videojuegos, necesitarás una <em>tarjeta gráfica potente</em>, un procesador de buen rendimiento y suficiente RAM.</li>
+                    <li><strong>Edición de video o diseño gráfico:</strong> Estas tareas requieren una <em>CPU de múltiples núcleos</em>, gran cantidad de RAM y un almacenamiento rápido (como un SSD).</li>
+                    <li><strong>Ofimática y navegación básica:</strong> Si solo necesitas tu PC para tareas cotidianas, como navegar por internet, puedes optar por un <em>procesador más modesto</em> y componentes de gama media o baja.</li>
+                </ul>
+            </section>
+
+            <div class = "col-xxl-6 col-md-12 text-center">
+                <img class ="blog-img1" src="./assets/blog-assets/pexels-sharad-7199194.jpg" alt="imagen 1 del blog">
+            </div>
+
+            <div class = "col-xxl-6 d-none d-xxl-block">
+               <img class="blog-img2" src="./assets/blog-assets/Intel Vs AMD.jpeg" alt="imagen de amd vs intel">
+            </div>
+
+            <section class="col-xxl-6 col-md-12 py-20">
+                <h2>2. El Procesador (CPU)</h2>
+                <p>El procesador es el <strong>cerebro</strong> de tu computadora, y su elección dependerá del tipo de tareas que realices. Los dos principales fabricantes son <strong>Intel</strong> y <strong>AMD</strong>. Ambas marcas ofrecen procesadores de diferentes gamas:</p>
+                <ul>
+                    <li><strong>Intel:</strong> Suele ser popular por su estabilidad en juegos, especialmente en sus procesadores de la serie Core i5 e i7.</li>
+                    <li><strong>AMD:</strong> Ofrece una excelente relación calidad-precio, especialmente en tareas multihilo como edición de video o renderizado 3D.</li>
+                </ul>
+            </section>
+            <div class = "col-xxl-6 d-md-none">
+                <img class="blog-img2" src="./assets/blog-assets/Intel Vs AMD.jpeg" alt="imagen de amd vs intel">
+             </div>
+
+            <section class="col-xxl-12 py-30">
+                <h2>3. Tarjeta de video</h2> 
+                <p>La <strong>GPU</strong> (Unidad de Procesamiento Gráfico) es crucial si planeas realizar tareas gráficas intensivas, como videojuegos, diseño 3D, modelado, renderizado o edición de video. Las dos marcas más reconocidas son <strong>NVIDIA</strong> y <strong>AMD</strong>, cada una con sus ventajas en diferentes situaciones.</p>
+    
+                <h3>NVIDIA</h3>
+                <p class ="d-none d-md-none d-xxl-block"><strong>NVIDIA</strong> es conocida por sus potentes tarjetas gráficas, especialmente las de la serie <strong>GeForce RTX</strong>, que son muy populares entre gamers y creadores de contenido. Una de sus principales características es la tecnología <em>Ray Tracing</em>, que mejora significativamente la iluminación y los reflejos en tiempo real,
+                     haciendo que los juegos se vean más realistas. Además, la tecnología <strong>DLSS (Deep Learning Super Sampling)</strong> es otra gran ventaja, ya que utiliza inteligencia artificial para mejorar la resolución de los juegos sin sacrificar el rendimiento.</p>
+
+                <p>Algunos modelos recomendados de NVIDIA dependiendo de tus necesidades incluyen:</p>
+                <ul>
+                    <li><strong>GeForce RTX 4060 o RTX 4070:</strong> Buenas opciones para juegos en 1080p y 1440p con gráficos de alta calidad y Ray Tracing activado.</li>
+                    <li><strong>GeForce RTX 4080 o RTX 4090:</strong> Ideales para gaming en 4K o para profesionales que trabajen con edición de video 4K o renderizado 3D pesado, ya que ofrecen el máximo rendimiento disponible en la actualidad.</li>
+                </ul>
+    
+                <h3>AMD</h3>
+                <p class="d-none d-md-none d-xxl-block"><strong>AMD</strong> ha avanzado mucho con su línea de tarjetas <strong>Radeon RX</strong>. Aunque en algunos casos puede no ofrecer las mismas características avanzadas que NVIDIA (como el Ray Tracing tan pulido), tiene la ventaja de ofrecer una relación <strong>precio-rendimiento</strong> más atractiva, especialmente en la gama media. AMD también ofrece tecnologías como <strong>FidelityFX Super Resolution (FSR)</strong>, que mejora el rendimiento y la calidad visual de los juegos, similar a DLSS, pero con soporte para una mayor cantidad de juegos y hardware.</p>
+                <p class ="d-none d-md-block d-xxl-none">AMD ha avanzado mucho con su línea de tarjetas Radeon RX. Aunque en algunos casos puede no ofrecer las mismas características avanzadas que NVIDIA (como el Ray Tracing tan pulido), tiene la ventaja de ofrecer una relación precio-rendimiento más atractiva</p>
+            </section>
+
+            <div class = "col-xxl-12 py-20 text-center">
+                <img class="blog-img3" src="./assets/blog-assets/HD wallpaper_ Technology, AMD, Radeon, Red.jpeg" alt="imgaen del logo de AMD"> 
+            </div>
+
+            <section class="col-12 my-5">
+                <h2>5. Memoria RAM y almacenamiento</h2>
+                <p>La <strong>RAM</strong> es crucial para ejecutar múltiples aplicaciones de manera fluida. Debes considerar dos aspectos clave:</p>
+                <ul>
+                    <li><strong>Cantidad:</strong> Para un uso general, 8 GB pueden ser suficientes, pero para gaming o edición de video, es recomendable 16 GB o más.</li>
+                    <li><strong>Velocidad:</strong> La velocidad de la RAM, medida en MHz, afecta el rendimiento general. Opta por módulos de 3000 MHz o más si tu placa base lo permite.</li>
+                </ul>
+                <h2>Almacenamiento: SSD vs. HDD</h2>
+                <p>El almacenamiento afecta directamente la velocidad de tu sistema:</p>
+                <ul>
+                    <li><strong>SSD:</strong> Más rápido que un HDD, mejora el tiempo de arranque y la carga de aplicaciones.</li>
+                    <li><strong>HDD:</strong> Más económico para almacenar archivos grandes, aunque más lento.</li>
+                </ul>
+            </section>
+
+            <div class="col-xxl-6 py-10"><img class="img-blog" src="./assets/blog-assets/pexels-zeleboba-20860011.jpg" alt="imagen de case"></div>
+
+            <section class ="col-xxl-6">
+                <h2>6.Torre,fuente de poder y sistema de refrigeracion</h2>
+                <h3>Caja o torre</h3>
+                <p>La caja debe tener suficiente espacio para tus componentes y ofrecer buena ventilación. Si planeas hacer overclocking o agregar más ventiladores, elige una caja con espacio adicional.</p>
+                <h3>Fuente de poder</h3>
+                <p>La <strong>fuente de alimentación</strong> suministra energía a todos los componentes. Asegúrate de elegir una con suficiente potencia (vatios) para tu configuración y que tenga certificación 80 Plus para garantizar eficiencia energética.</p>
+                <h3>Sistema de refrigeracion</h3>
+                <p>Es importante mantener la temperatura bajo control, especialmente si usas tu PC para tareas intensivas:</p>
+                <ul>
+                    <li><strong>Ventilación por aire:</strong> Suele ser suficiente para la mayoría de las configuraciones.</li>
+                    <li><strong>Refrigeración líquida:</strong> Ideal para overclocking o sistemas de alto rendimiento.</li>
+                </ul>
+
+            </section>
+                
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

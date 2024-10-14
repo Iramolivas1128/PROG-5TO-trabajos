@@ -12,202 +12,344 @@
 </head>
 <body>
 
-
-    <header class = "row header-main d-none d-lg-flex d-xxl-print">
-        <div class = "col-2  img-logo-container">
-            <img class = "easy-tech-logo" src="./assets/easy-tech-img-logo-preview.png" alt= "logo principal de la pagina">
-        </div>
-       
-        <div class = "col-4 container-nav-bar">
-            <nav class="nav-bar">
-                <ul class="nav-links">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Servicio de reparación</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li class="dropdown">
-                        <a href="#">Nosotros</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Conócenos</a></li>
-                            <li><a href="#">Contáctanos</a></li>
-                            <li><a href="#">Q&A</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            
-        </div>
-       
-        <div class = "col-4 ">
-            <form action="/buscar" method="GET">
-                <input class = "search-bar" type="search" name="query" placeholder="Buscar..." required>
-            </form>
-        </div>
-
-        <div class = "col-2">
-            <img class = "img-icon-profile-info" src="./assets/easy-tech-profile-icon.png" alt="Icono para ver la informacion del usuario">
-        </div>
-    </header>  
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" target="_self">
+                    <img class="img-logo" src="./assets/Easy-teach-logo-main.png" alt="EasyTech logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Dropdown Productos -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                            </a>
+                              <!-- Dropdown Componentes con submenú -->
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Computadoras</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Arma tu propia computadora</a></li>
+                                        <li><a class="dropdown-item" href="#">Computadoras pre-ensambladas</a></li>
+                                        <li><a class="dropdown-item" href="#">Computadoras de escritorio</a></li>
+                                        <li><a class="dropdown-item" href="#">Portatiles</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Dropdown Componentes con submenú -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Componentes</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Tarjetas Gráficas</a></li>
+                                        <li><a class="dropdown-item" href="#">Tarjetas madre</a></li>
+                                        <li><a class="dropdown-item" href="#">Procesadores</a></li>
+                                        <li><a class="dropdown-item" href="#">Memorias RAM</a></li>
+                                        <li><a class="dropdown-item" href="#">Unidades de almacenamiento</a></li>
+                                        <li><a class="dropdown-item" href="#">Fuentes de Poder</a></li>
+                                        <li><a class="dropdown-item" href="#">Refrigeración</a></li>
+                                        <li><a class="dropdown-item" href="#">Gabinetes</a></li>
+                                    </ul>
+                                </li>
+                                  <!-- Dropdown Componentes con submenú -->
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="#">Perifericos</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Pantallas</a></li>
+                                        <li><a class="dropdown-item" href="#">Mouse</a></li>
+                                        <li><a class="dropdown-item" href="#">Teclados</a></li>
+                                        <li><a class="dropdown-item" href="#">Monitores</a></li>
+                                        <li><a class="dropdown-item" href="#">Sillas gamer</a></li>
+                                        
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
     
+                        <li class="nav-item">
+                            <a class="nav-link active custom-nav-link" href="#">Servicio de reparación</a>
+                        </li>
     
+                        <li class="nav-item dropdown">
+                            <a class="nav-link custom-nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Blog
+                            </a>
+                              <!-- Dropdown Componentes con submenú -->
+                            <ul class="dropdown-menu ">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item" href="./Blog.html">Blog del día</a>
+                                    <a class="dropdown-item" href="#">Tendencias tecnologicas</a>
+                                    <a class="dropdown-item" href="#">Tutoriales y guías</a>
+                                    <a class="dropdown-item" href="#">Reseñas de productos</a>
+                                </li>
+                            </ul>
+                        </li>
 
-
-    <header class="row header-mobile d-flex d-lg-none">
-        <img class="easy-tech-logo" src="./assets/Easy-teach-logo-main.png" alt="logo principal de la pagina">
+                        <li class="nav-item">
+                            <a class="nav-link active custom-nav-link" href="./page-Nosotros.html" target="_self">Nosotros</a>
+                        </li>
+                    </ul>
     
-       
-
-            <form action="/buscar" method="GET">
-                <input class="search-bar search-item" type="search" name="query" placeholder="Buscar..." required>
-            </form>
-    
-            
-            <button id="menu-toggle" class="btn search-item">☰</button>
-            
-      
-    
-        <div id="mobile-menu" class="mobile-nav d-none">
-            <nav class="nav-bar">
-                <ul class="nav-links">
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Servicio de reparación</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle">Nosotros</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Conócenos</a></li>
-                            <li><a href="#">Contáctanos</a></li>
-                            <li><a href="#">Q&A</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <img class="img-icon-profile-info" src="./assets/easy-tech-profile-icon.png" alt="Icono para ver la informacion del usuario">
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
     
-    
 
-    <main class = "index-main-section">
+    <main class="container text-center index-main-section">
 
-        <section  id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./assets/img1-carusel-easy-tech.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/img2-carusel-easy-tech.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="./assets/img3-carusel-easy-tec.jpg" class="d-block w-100" alt="...">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-    
-        </section>
-
-
-        <div class = "card-products-container">
-
-            <div class="tarjeta-producto card-product1">
-                <img class="img-producto img-procesador-amd-ryzen-7" src="./assets/img-procesador-amd-ryzen-7.jpg" alt="Imagen de un procesador ryzen 7">
-                <h4 class="titulo-producto">Procesador AMD Ryzen 7 5800X</h4>
-                <p class="desc-corta-producto">Procesador AMD Ryzen 7 5800X / 8 Core / 16 Thread / 3.8GHz / 4.7GHz Boost / TDP 105W / No incluye disipador / (Requiere Tarjeta de Video)</p>
-                <p class="precio">$4,500.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
+        <div class = "row mt-5">
+           
+            <div class="col">
+                <section  id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="./assets/img1-carusel-easy-tech.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/img2-carusel-easy-tech.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="./assets/img3-carusel-easy-tec.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img4-carusel-easy-tech.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img5-carousel-easy-tech.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
             
-            <div class="tarjeta-producto card-product2">
-                <img class="img-producto img-monitor-cooler-master" src="./assets/producto2.jpeg" alt="imagen de Monitor Gamer Cooler Master GA271 LCD 27">
-                <h4 class="titulo-producto">Monitor Gamer Cooler Master GA271 LCD 27</h4>
-                <p class="desc-corta-producto">Monitor Gamer Cooler Master GA271 LCD 27 / Wide Quad HD / G-Sync/FreeSync / 100Hz / HDMI / Negro / CMI-GA271-US/</p>
-                <p class="precio">$5,800.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
+                </section>
             </div>
-            
-            <div class="tarjeta-producto card-product3">
-                <img class="img-producto img-Tarjeta-de-video-Radeon-RX-6600-8GB-GDDR6" src="./assets/producto3.jpeg" alt="imagen de Tarjeta de video Radeon RX 6600 8GB GDDR6">
-                <h4 class="titulo-producto">Tarjeta de video Radeon RX 6600 8GB GDDR6</h4>
-                <p class="desc-corta-producto">Tarjeta de video Radeon RX 6600 8GB GDDR6 / Gigabyte Eagle 8G / HDMI, DP/ PCI-e 4.0</p>
-                <p class="precio">$6,200.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-            
-            <div class="tarjeta-producto card-product4">
-                <img class="img-producto img-Tarjeta-de-Video-Nvidia-GeForce-RTX-3060" src="./assets/producto4.jpeg" alt=" imagen de Tarjeta de Video Nvidia GeForce RTX 3060">
-                <h4 class="titulo-producto">Tarjeta de Video Nvidia GeForce RTX 3060</h4>
-                <p class="desc-corta-producto">Tarjeta de Video Nvidia GeForce RTX 3060 / ZOTAC TWIN EDGE LHR / ZT-A30600E-10M / 2 AÑOS DE GARANTIA NACIONAL</p>
-                <p class="precio">$7,500.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-            
-            <div class="tarjeta-producto card-product5">
-                <img class="img-producto img-Unidad-de-Estado-Solido-SSD-256GB" src="./assets/producto5.jpeg" alt=" imagen de Unidad de Estado Solido SSD 256GB">
-                <h4 class="titulo-producto">Unidad de Estado Solido SSD 256GB</h4>
-                <p class="desc-corta-producto">Unidad de Estado Solido SSD 256GB 2.5" / SATA3 / Adata SU800 / ASU800SS-256GT-C</p>
-                <p class="precio">$1,200.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-            
-            <div class="tarjeta-producto card-product6">
-                <img class="img-producto img-Mouse-Gamer-Logitech-G203" src="./assets/producto6.jpeg" alt="imagen de Mouse Gamer Logitech G203">
-                <h4 class="titulo-producto">Mouse Gamer Logitech G203</h4>
-                <p class="desc-corta-producto">Mouse Gamer Logitech G203 Lightsync Black / Optico / USB / 8000DPI / Led RGB/ 910-005793</p>
-                <p class="precio">$650.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-            
-            <div class="tarjeta-producto card-product7">
-                <img class="img-producto img-Enfriamiento-Liquido-Vetroo-V240" src="./assets/producto7.jpeg" alt="imagen de Enfriamiento Liquido Vetroo V240">
-                <h4 class="titulo-producto">Enfriamiento Liquido Vetroo V240</h4>
-                <p class="desc-corta-producto">Enfriamiento Liquido Vetroo V240 / Enfriamiento Líquido para CPU / 2x120mm / 1800RPM / VT-AIO-V240-BK</p>
-                <p class="precio">$1,800.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-            
-            <div class="tarjeta-producto card-product8">
-                <img class="img-producto img-Tarjeta-de-video-Nvidia-MSI-RTX-4060-Gaming-X-8G" src="./assets/producto8.jpeg" alt="imagen de Tarjeta de video Nvidia MSI RTX 4060 Gaming X 8G">
-                <h4 class="titulo-producto">Tarjeta de video Nvidia MSI RTX 4060 Gaming X 8G</h4>
-                <p class="desc-corta-producto">Tarjeta de video Nvidia MSI RTX 4060 Gaming X 8G/ DLSS 3 / Ray Tracing / 128-bit - 912-v516-011</p>
-                <p class="precio">$6,999.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-            
-            <div class="tarjeta-producto card-product9">
-                <img class="img-producto img-Silla-Gamer-Corsair-T3-Rush-Gaming-2023-Grey-harcoal" src="./assets/producto9.jpeg" alt="imagen de Enfriamiento Líquido Deepcool">
-                <h4 class="titulo-producto">Enfriamiento Líquido Deepcool</h4>
-                <p class="desc-corta-producto">Enfriamiento Líquido Deepcool LS320 / 120 mm / Aura Sync / R-LS320-WHAMMT-G-1/</p>
-                <p class="precio">$700.00</p> 
-                <button class="button-ver-mas">Ver más sobre el producto</button>
-            </div>
-        
 
         </div>
-      
-       
+
+        <div class="row">
+            <h1>¡Productos mas vendidos!!</h1>
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/img-procesador-amd-ryzen-7.jpg" class="card-img-top img-producto" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Procesador AMD Ryzen 7 5800X</h5>
+                        <p class="card-text desc-corta-producto">Procesador AMD Ryzen 7 5800X / 8 Core / 16 Thread / 3.8GHz / 4.7GHz Boost / TDP 105W / No incluye disipador / (Requiere Tarjeta de Video)</p>
+                        <p class="card-text precio">$4,500.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 2 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto2.jpeg" class="card-img-top img-producto" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Monitor Gamer Cooler Master GA271 LCD 27</h5>
+                        <p class="card-text desc-corta-producto">Monitor Gamer Cooler Master GA271 LCD 27 / Wide Quad HD / G-Sync/FreeSync / 100Hz / HDMI / Negro / CMI-GA271-US</p>
+                        <p class="card-text precio">$5,800.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 3 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto3.jpeg" class="card-img-top img-producto" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Tarjeta de video Radeon RX 6600 8GB GDDR6</h5>
+                        <p class="card-text desc-corta-producto">Tarjeta de video Radeon RX 6600 8GB GDDR6 / Gigabyte Eagle 8G / HDMI, DP/ PCI-e 4.0</p>
+                        <p class="card-text precio">$6,200.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+            <h1>Productos en descuento</h1>
+            <!-- Tarjeta 4 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto4.jpeg" class="card-img-top img-producto" alt="Producto 4">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Tarjeta de Video Nvidia GeForce RTX 3060</h5>
+                        <p class="card-text desc-corta-producto">Tarjeta de Video Nvidia GeForce RTX 3060 / ZOTAC TWIN EDGE LHR / ZT-A30600E-10M / 2 AÑOS DE GARANTIA NACIONAL</p>
+                        <p class="card-text precio">$7,500.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 5 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto5.jpeg" class="card-img-top img-producto" alt="Producto 5">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Unidad de Estado Solido SSD 256GB</h5>
+                        <p class="card-text desc-corta-producto">Unidad de Estado Solido SSD 256GB 2.5" / SATA3 / Adata SU800 / ASU800SS-256GT-C</p>
+                        <p class="card-text precio">$1,200.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 6 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto6.jpeg" class="card-img-top img-producto" alt="Producto 6">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Mouse Gamer Logitech G203</h5>
+                        <p class="card-text desc-corta-producto">Mouse Gamer Logitech G203 Lightsync Black / Óptico / USB / 8000DPI / Led RGB/ 910-005793</p>
+                        <p class="card-text precio">$650.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 7 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto7.jpeg" class="card-img-top img-producto" alt="Producto 7">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Enfriamiento Liquido Vetroo V240</h5>
+                        <p class="card-text desc-corta-producto">Enfriamiento Liquido Vetroo V240 / Enfriamiento Líquido para CPU / 2x120mm / 1800RPM / VT-AIO-V240-BK</p>
+                        <p class="card-text precio">$1,800.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 8 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto8.jpeg" class="card-img-top img-producto" alt="Producto 8">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Tarjeta de video Nvidia MSI RTX 4060 Gaming X 8G</h5>
+                        <p class="card-text desc-corta-producto">Tarjeta de video Nvidia MSI RTX 4060 Gaming X 8G/ DLSS 3 / Ray Tracing / 128-bit - 912-v516-011</p>
+                        <p class="card-text precio">$6,999.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 9 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto9.jpeg" class="card-img-top img-producto" alt="Producto 9">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Enfriamiento Líquido Deepcool</h5>
+                        <p class="card-text desc-corta-producto">Enfriamiento Líquido Deepcool LS320 / 120 mm / Aura Sync / R-LS320-WHAMMT-G-1/</p>
+                        <p class="card-text precio">$700.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Productos con 5 estrellas</h1>
+            <!-- Tarjeta 10 -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto10.jpeg" class="card-img-top img-producto" alt="Producto 10">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Laptop Gamer ASUS Laptop TUF Gaming A15 </h5>
+                        <p class="card-text desc-corta-producto">Laptop Gamer ASUS Laptop TUF Gaming A15 / FA507NU-LP101W / AMD Ryzen 5 7535HS / NVIDIA GeForce RTX 4050 / 144Hz / 8GB RAM / 512GB SSD / Windows 11 /</p>
+                        <p class="card-text precio">$18,999.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 11 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto11.jpeg" class="card-img-top img-producto" alt="Producto 11">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Laptop Lenovo ThinkPad X13 Yoga Gen2 13.3"</h5>
+                        <p class="card-text desc-corta-producto">Laptop Lenovo ThinkPad X13 Yoga Gen2 13.3" / Intel Core i5-1135G7 2.40GHz / 16GB / 256GB SSD / Windows 10 Pro / Negro / 20W9S19100</p>
+                        <p class="card-text precio">$22,999.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 12 -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto12.jpeg" class="card-img-top img-producto" alt="Producto 12">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Laptop Gamer MSI Raider GE78HX</h5>
+                        <p class="card-text desc-corta-producto">Laptop Gamer MSI Raider GE78HX / 17.3 pulgadas / QHD+ / IPS / Intel® Core i9-13950HX / NVIDIA® GeForce RTX 4080 / 64GB (32GB x 2) / 2TB NVMe SSD Gen4x4 /</p>
+                        <p class="card-text precio">$59,999.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <img  class="w-100 py-5 mb-2" src="./assets/anuncio.jpg" alt="anuncio">
+            </div>
+
+            <h1>Liquidación</h1>
+
+            <!-- Tarjeta 13 -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/Producto13.jpeg" class="card-img-top img-producto" alt="Producto 13">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Tarjeta de Video PNY NVIDIA Quadro RTX A2000</h5>
+                        <p class="card-text desc-corta-producto">Tarjeta de Video PNY NVIDIA Quadro RTX A2000 / 3328 núcleos CUDA / PCI Express x16 4.0</p>
+                        <p class="card-text precio">$8,999.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 14 -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/Producto14.jpeg" class="card-img-top img-producto" alt="Producto 14">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Computadora Gamer Xtreme PC Gaming CM-50219</h5>
+                        <p class="card-text desc-corta-producto">Computadora Gamer Xtreme PC Gaming CM-50219 / Intel Core i9-14900KF / 3.20GHz, 64GB, 4TB HDD + 2TB SSD /</p>
+                        <p class="card-text precio">$68,999.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 15 -->
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card tarjeta-producto">
+                    <img src="./assets/producto15.jpg" class="card-img-top img-producto" alt="Producto 15">
+                    <div class="card-body">
+                        <h5 class="card-title titulo-producto">Intel Core i3-14100 </h5>
+                        <p class="card-text desc-corta-producto">Intel Core i3-14100 - Core i3 14ta generación Raptor Lake 4 núcleos (4P+0E) LGA 1700 60W I-</p>
+                        <p class="card-text precio">$2,509.00</p>
+                        <a href="#" class="btn btn-primary button-ver-mas">Ver más sobre el producto</a>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>        
+
     </main>
 
-    <footer>
-        
-        <div>
-            <p/p>
-        </div>
-
-    </footer>
-
-   
-    <script>
-        document.getElementById('toggle-nav').addEventListener('click', function () {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('d-none');
-        });
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

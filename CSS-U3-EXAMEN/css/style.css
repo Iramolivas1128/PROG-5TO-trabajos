@@ -1,7 +1,10 @@
 /* Definir variables globales */
+
 :root {
     --primary-color: #5a2375;
     --secondary-color: #473198;
+    --oscure-color-one:#232528;
+    --oscure-color-two:232528;
     --text-color-light: #f7f0f5;
     --text-color-dark: #3d3d3d;
 }
@@ -12,152 +15,77 @@ body {
 }
 
 header { 
-    
-    height: auto; 
-    background-color: var(--primary-color);
     position: sticky;
-    z-index: 10;
+    width: 99%;
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    z-index: 1000;
     top: 0;
     color: var(--text-color-light);
 }
 
-.easy-tech-logo {
-    margin: 7% 0 0 20%;
-    width: 50%;
-    height: 60%;
+.navbar-brand{
+ width: 18%;
 }
 
-/* Estilos base para el menú */
-.nav-links {
-    list-style-type: none;
-    margin-top: 9%;
-    padding: 0;
-    display: flex; 
-    justify-content: space-between; 
-    font-size: larger;
-    position: relative;
-}
-
-.nav-links li {
-    position: relative;
-}
-
-.nav-links li a {
-    color: var(--text-color-light);
-}
-
-/* Estilos del menú desplegable */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; 
-    left: 0;
-    background-color: var(--primary-color);
-    padding: 0;
-    list-style-type: none;
-    width: 200px;
-}
-
-.dropdown-menu li {
-    border-bottom: 1px solid var(--text-color-light);
-}
-
-.dropdown-menu li a {
-    display: block;
-    padding: 10px;
-    color: var(--text-color-light);
-    text-decoration: none;
-}
-
-.dropdown-menu li a:hover {
-    background-color: var(--secondary-color);
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-form {
+.navbar-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+    flex-wrap: nowrap; /* Evita que los enlaces se envuelvan */
+    justify-content: space-between; /* Distribuye el espacio adecuadamente */
+    width: auto;
 }
 
-/* Estilo para la barra de búsqueda */
-input[type="search"] {
-    width: 25rem;
-    height: 2.5rem;
-    padding: 0 0.9375rem;
-    border: 0.2rem solid var(--text-color-light);
-    border-radius: 12px;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.3s;
+
+form.d-flex input[type="search"] {
+    margin: auto 0;
+    width: 60%; 
+    height: 85%;
 }
 
-input[type="search"]:focus {
-    border-color: var(--text-color-dark);
-}
-
-/* Estilo del icono de perfil */
-.img-icon-profile-info {
-    margin-top: 12%;
-    width: 30%;
-    height: 45%;
-}
-
-.index-main-section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 2rem;
-    padding: 2rem;
-    justify-items: center;
-    background-color: var(--text-color-light);
-}
-
-/* Estilo del carrusel */
 .carousel {
-    width: 80%;
-    max-width: 1200px;
-    height: auto;
-    justify-self: center; 
+    width: 75%;
+    margin: 0 auto;
 }
 
-/* Contenedor de las tarjetas de productos */
-.card-products-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto); 
-    gap: 1rem; /* Espacio entre las tarjetas */
-    justify-items: center; 
-    width: 100%;
+.index-main-section .row h1{
+    margin: 4% auto
+}
+
+header li a{
+    color: var(--text-color-light) !important; 
+}
+.custom-nav-link {
+    font-size: 1.2rem !important;
+}
+
+.img-logo{
+    width: 30%;
+    height: auto;
+}
+
+.img-icon-profile-info{
+    width: 8.5%;
+    height: auto;
 }
 
 /* Estilo de las tarjetas de productos */
-.tarjeta-producto {
-    display: flex;
-    flex-direction: column;
+
+.tarjeta-producto{
     align-items: center;
     text-align: justify;
-    border: 4px solid var(--text-color-dark);
+    border: 3px solid var(--text-color-dark);
     border-radius: 4%;
-    width: 21.875rem; /* Ancho de la tarjeta */
-    height: 27.25rem; /* Alto de la tarjeta */
-    margin: 0.5rem;
+    width: 75%;
+    height: 90%;
+    margin: 1.2rem;
     background-color: #fff;
 }
 
+
 /* Ajuste de las imágenes */
 .img-producto {
-    width: 50%;
-    height: auto;
-    padding-top: 4%;
+    width: 30%;
+    height: 45%;
 }
 
 /*modificacion del texto dentro de cada tarjeta */
@@ -185,99 +113,149 @@ input[type="search"]:focus {
 
 .button-ver-mas {
     font-size: large;
-    padding: calc(1% + 1rem);
+    padding: 3% auto;
     background-color: var(--secondary-color);
     color: var(--text-color-light);
-    border: 3px solid var(--text-color-dark);
+    border: 4px solid var(--oscure-color-one);
     border-radius: 12px;
     cursor: pointer;
 }
 
-.card-product3 .button-ver-mas,
-.card-product5 .button-ver-mas,
-.card-product6 .button-ver-mas {
-    margin: 5% 0;
+.button-ver-mas:hover{
+    background-color: var(--secondary-color);
 }
 
-#mobile-menu {
-    display: none;
+.dropdown-menu li {
+    border-bottom: 1px solid var(--text-color-light);
+    background-color:var(--oscure-color-one);
 }
+
+.dropdown-menu{
+    background-color: #232528;
+}
+
+.dropdown-menu li a {
+    display: block;
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--text-color-dark);
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+    display: none; /* Oculta por defecto */
+}
+
+.dropdown-submenu:hover .dropdown-menu {
+    display: block; /* Muestra al hacer hover */
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/**************************************************************************/
+
+/* Edición de la pagina blog */
+
+.img-blog{
+    height: auto;
+    width: 100%;
+}
+
+.blog-img1{
+    height: auto;
+    width: 80%;
+}
+
+.blog-img2{
+    height:auto;
+    width: 90%;
+}
+
+.main-blog p{
+    text-align: justify;
+}
+
+.main-blog{
+    font-family: "Roboto", sans-serif;
+}
+
+
 
 @media (max-width: 767.98px) {
-    *{
-        border: solid red 3px;
-    }
 
-    .header-mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-start;
-        align-items: center;
-        background-color: var(--primary-color);
-        color: var(--text-color-light);
-        height: 10vh; 
-    }
-
-    .header-mobile .easy-tech-logo {
-        width: 25%; 
+    .img-logo{
+        width: 60%;
         height: auto;
-        margin: 0;
     }
-
-    input[type="search"] {
-        width: 12rem;
-        height: 2rem;
-        padding:0;
-        border-radius: 8px;
-        font-size: 1rem;
-        outline: none;
-        transition: border-color 0.3s;
+    .img-icon-profile-info{
+        width: 10.5%;
+        height: auto;
     }
-    
-    .btn {
-        width: 10%;
-        background-color: var(--primary-color); 
-        color: var(--text-color-light); 
-        border: none; 
-        border-radius: 8px; 
-        cursor: pointer; 
-        padding: 0.5rem 1rem; /
-
+    .index-main-section .row h1{
+        margin-bottom: 1%;
     }
 
     .carousel {
         width: 90%;
         margin: 0 auto;
     }
-
-    /* Ajustar las tarjetas de productos */
-    .card-products-container {
-        grid-template-columns: 1fr; /*una tarjeta por fila */
-        grid-template-rows: auto; 
-    }
-
+    
     /* tarjetas */
     .tarjeta-producto {
         width: 72%; 
-        height: 80%;
+        height: 72%;
         margin: 0.7rem auto; 
         border: 2px solid var(--text-color-dark);
     }
 
     .button-ver-mas {
-        font-size: small;
+        font-size: smaller;
         background-color: var(--secondary-color);
         border: 3.5px solid var(--text-color-dark);
         border-radius: 10px;
         margin-bottom: 40%; 
-        padding: calc(1% + 0.5rem);
+        padding: calc(1% + 0.2rem);
     }
 
-    .card-product3 .button-ver-mas,
-    .card-product5 .button-ver-mas,
-    .card-product6 .button-ver-mas {
-        margin-bottom: 35%;
+    .titulo-producto {
+        font-family: "Roboto", sans-serif;
+        font-size: medium;
+        font-weight: 700;
+        margin-top: 4%;
     }
-
     
+    .desc-corta-producto {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-size: smaller;
+        padding: 0 3%;
+    }
+    
+    .precio {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-size: 1rem;
+        color: var(--secondary-color);
+        text-align: left;
+    }
+    
+    .blog-img2{
+        width: 100%;
+    }
+    
+    .blog-img3{
+        width: 90%;
+    }
+
 }
