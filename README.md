@@ -12,7 +12,7 @@ Repositorio de trabajos de la materia de programación en 5to semestre
 - [Ejercicio #8 - Sitio responsivo](/CSS-U3-ACT8/index.html)
 - [Examen unidad 3](/CSS-U3-EXAMEN/index.html)
 - [JS-U4-ACT1-calculadora](JS-U4-ACT1-Calculadora/calculadora.js)
-- [JS-U4-ACT2-Manipulacon de estilos](JS-U4-ACT2-Manipulación-de-estilos/index.html)
+- [JS-U4-ACT2-Manipulacon de estilos](/JS-U4-ACT2-Manipulación-de-estilos/index.html)
   
   
 
