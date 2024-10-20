@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación de estilos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-8">
+                <h1>Cambia el color de fondo</h1>
+                <main>
+                    <div class="contenedor-botones">
+                        <button class="button red-button" type="button">Rojo</button>
+                        <button class="button green-button" type="button">Verde</button>
+                        <button class="button blue-button" type="button">Azul</button>
+                        <button class="button gray-button" type="button">Reestablecer</button>
+                    </div>
+                </main>
+                <h3>¡Haz click para cambiar de color!</h3>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+
+    <script>
+        const redButton = document.querySelector('.red-button');
+        const greenButton = document.querySelector('.green-button');
+        const blueButton = document.querySelector('.blue-button');
+        const grayButton = document.querySelector('.gray-button');
+
+        
+        redButton.addEventListener('click', () => {
+            document.body.style.backgroundColor = '#D91C1C';
+        });
+
+        greenButton.addEventListener('click', () => {
+            document.body.style.backgroundColor = '#00F57E';
+        });
+
+        blueButton.addEventListener('click', () => {
+         document.body.style.backgroundColor = '#0A4BFF';
+        });
+
+        grayButton.addEventListener('click', () => {
+            document.body.style.backgroundColor = '#FFFFFF'; 
+        });
+        
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

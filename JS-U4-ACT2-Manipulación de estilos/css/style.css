@@ -1,0 +1,35 @@
+main{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.col-8{
+    margin-top: 300px;
+}
+
+h3{
+    margin-top: 25px;
+}
+
+.contenedor-botones{
+    display: flex;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.red-button{
+    background-color:#D91C1C;
+}
+
+.green-button{
+    background-color: #00F57E;
+}
+
+.blue-button{
+    background-color: #0A4BFF;
+}
+
+.gray-button{
+    background-color: #B4B2A7;
+}
