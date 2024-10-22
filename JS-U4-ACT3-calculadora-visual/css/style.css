@@ -48,8 +48,8 @@ ul li{
 }
 
 .historial-list {
-    overflow-y: auto; /* Enable vertical scrolling */
-    flex-grow: 1; /* Allow the list to grow and take available space */
+    overflow-y: auto; 
+    flex-grow: 1; 
     max-height: 220px;
 }
 
@@ -57,7 +57,7 @@ ul li{
    align-self: flex-start;
     width: 30%;
     z-index: 1000;
-    margin: 5% auto 0; /* Center the button horizontally */
+    margin: 5% auto 0; 
 }
 
 
