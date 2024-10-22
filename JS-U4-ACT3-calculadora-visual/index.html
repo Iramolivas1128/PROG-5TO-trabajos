@@ -106,7 +106,68 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-    <script src="./JS/script.js"></script>
+    <script>
+
+    const screen = document.getElementById('calculo');
+    const botones = document.querySelectorAll('button:not(#limpiar-historial)'); 
+    const historial = document.getElementById('historial');
+
+    let op = "";
+
+    const actualizarPantalla = (value) => {
+        op += value;
+        screen.value = op;
+    };
+
+    const calcularResultado = () => {
+        try {
+            const resultado = eval(op);
+            screen.value = resultado;
+            return resultado;
+        } catch (error) {
+            screen.value = "error";
+            return null; 
+        }
+    };
+
+    const limpiarPantalla = () => {
+        op = "";
+        screen.value = "";
+    };
+
+    const agregarElemento = (resultado) => {
+        if (resultado !== null) {
+            const nuevoElemento = document.createElement('li');
+             nuevoElemento.textContent = resultado;
+            historial.appendChild(nuevoElemento);
+        }
+    };
+
+    const limpiarHistorial = () => {
+        historial.innerHTML = "";
+    };
+
+    botones.forEach(boton => {
+        boton.addEventListener('click', () => {
+            const valor = boton.textContent;
+
+            if (valor === '=') {
+                const resultado = calcularResultado();
+                agregarElemento(resultado);
+            } else if (valor === 'C') {
+                limpiarPantalla();
+            } else {
+             actualizarPantalla(valor);
+            }   
+        });
+    });
+
+
+    const cleanButton = document.getElementById('limpiar-historial');
+    cleanButton.addEventListener('click', limpiarHistorial);
+
+
+    </script>
 
 </body>
 </html>
