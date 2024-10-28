@@ -14,7 +14,7 @@ Repositorio de trabajos de la materia de programación en 5to semestre
 - [JS-U4-ACT1-calculadora](JS-U4-ACT1-Calculadora/calculadora.js)
 - [JS-U4-ACT2-Manipulacon de estilos](/JS-U4-ACT2-Manipulación-de-estilos/index.html)
 - [JS-U4-ACT3-Calculadora visual](/JS-U4-ACT3-calculadora-visual/index.html)
-  
+- [Ejercicio 4 - Lista de tareas](/JS-U4-ACT4-Lista-de-tareas/index.html)
   
 
   
