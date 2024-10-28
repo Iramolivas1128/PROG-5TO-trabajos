@@ -1,0 +1,61 @@
+body {
+    background-color: #141414;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tareas-container {
+    border: 8px solid #292929;
+    border-radius: 10%;
+    background-color: #E7ECEE;
+    width: 700px;
+    height: 600px;
+}
+
+h2 {
+    margin-top: 5%;
+}
+
+.input-group {
+    width: 70%;
+    margin: 5% auto;
+}
+
+.list-group-item{
+    width: 70%;
+    height: 90%;
+    margin: 1% auto;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.complete-icon {
+    transition: transform 0.2s;
+}
+
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    background-color: #d1e7dd;
+}
+
+#task-list {
+    max-height: 400px; 
+    overflow-y: auto; 
+}
