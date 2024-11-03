@@ -1,0 +1,26 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #292929;
+}
+
+.card-cat-info {
+    display: flex;
+    align-items: center;
+    background-color: #FBFAF8;
+    border-radius: 12%;
+    padding: 20px;
+    margin: 15% auto;
+    width:85%;
+    height: 85%;
+}
+
+#cat-img {
+    width: 35%;
+    height: auto;
+    border-radius: 12%;
+    margin-right: 20px;
+}
+
+.cat-info {
+    text-align: left;
+}
